@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB1E1C25-A99B-4D0A-8EA2-5E14DB7DBC7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.Sdk">
+      <HintPath>..\..\Discord.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="FishNet.Runtime">
+      <HintPath>..\..\FishNet.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>..\..\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="GameKit.Dependencies">
+      <HintPath>..\..\GameKit.Dependencies.dll</HintPath>
+    </Reference>
+    <Reference Include="Kirurobo.UniWindowController">
+      <HintPath>..\..\Kirurobo.UniWindowController.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+      <HintPath>..\..\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-csharp">
+      <HintPath>..\..\spine-csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-unity">
+      <HintPath>..\..\spine-unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>..\..\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-{543FE4B1-\a.cs" />
+    <Compile Include="AchievementData.cs" />
+    <Compile Include="AmbientBusyMode.cs" />
+    <Compile Include="AmbientCityTime.cs" />
+    <Compile Include="AmbientConfig.cs" />
+    <Compile Include="AmbientPageController.cs" />
+    <Compile Include="AmbientPlayer.cs" />
+    <Compile Include="AmbientScene.cs" />
+    <Compile Include="AmbientSceneEntry.cs" />
+    <Compile Include="AmbientTheme.cs" />
+    <Compile Include="AmbientWeather.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="ba.cs" />
+    <Compile Include="bb.cs" />
+    <Compile Include="bc.cs" />
+    <Compile Include="bd.cs" />
+    <Compile Include="be.cs" />
+    <Compile Include="bf.cs" />
+    <Compile Include="bg.cs" />
+    <Compile Include="BgmAlbumConfig.cs" />
+    <Compile Include="BgmLoc.cs" />
+    <Compile Include="BgmPanelController.cs" />
+    <Compile Include="BgmPlayer.cs" />
+    <Compile Include="BgmPlayMode.cs" />
+    <Compile Include="BgmTrack.cs" />
+    <Compile Include="BgmTrackRow.cs" />
+    <Compile Include="bh.cs" />
+    <Compile Include="bj.cs" />
+    <Compile Include="bk.cs" />
+    <Compile Include="bl.cs" />
+    <Compile Include="bo.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiAdapterFactory.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiAuthStyle.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiChatRequest.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiChatResult.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiConnectionMode.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiErrorKind.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiHttp.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiLoc.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiModelFilter.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiModelList.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiPromptComposer.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiProviderCatalog.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiProviderConfig.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiProviderId.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiRequestRunner.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiSecretStore.cs" />
+    <Compile Include="BongoWaifu\AiApi\AiTriggerKind.cs" />
+    <Compile Include="BongoWaifu\AiApi\AnthropicAdapter.cs" />
+    <Compile Include="BongoWaifu\AiApi\DirectApiScheduler.cs" />
+    <Compile Include="BongoWaifu\AiApi\GeminiAdapter.cs" />
+    <Compile Include="BongoWaifu\AiApi\IAiChatAdapter.cs" />
+    <Compile Include="BongoWaifu\AiApi\OpenAiCompatibleAdapter.cs" />
+    <Compile Include="BongoWaifu\Crafting\CraftBasketSlot.cs" />
+    <Compile Include="BongoWaifu\Crafting\CraftItemSlot.cs" />
+    <Compile Include="BongoWaifu\Crafting\CraftPanel.cs" />
+    <Compile Include="BongoWaifu\Mcp\AchievementDto.cs" />
+    <Compile Include="BongoWaifu\Mcp\AskResult.cs" />
+    <Compile Include="BongoWaifu\Mcp\CharacterInfoDto.cs" />
+    <Compile Include="BongoWaifu\Mcp\CompanionPersona.cs" />
+    <Compile Include="BongoWaifu\Mcp\DialogueMessage.cs" />
+    <Compile Include="BongoWaifu\Mcp\DialogueQueue.cs" />
+    <Compile Include="BongoWaifu\Mcp\EnqueueOutcome.cs" />
+    <Compile Include="BongoWaifu\Mcp\GameStateReader.cs" />
+    <Compile Include="BongoWaifu\Mcp\GaugeInfoDto.cs" />
+    <Compile Include="BongoWaifu\Mcp\InventoryItemDto.cs" />
+    <Compile Include="BongoWaifu\Mcp\JsonRpcRequest.cs" />
+    <Compile Include="BongoWaifu\Mcp\McpDialogueServer.cs" />
+    <Compile Include="BongoWaifu\Mcp\McpProtocolRouter.cs" />
+    <Compile Include="BongoWaifu\Mcp\McpSession.cs" />
+    <Compile Include="BongoWaifu\Mcp\MessageKind.cs" />
+    <Compile Include="BongoWaifu\Mcp\OriginValidator.cs" />
+    <Compile Include="BongoWaifu\Mcp\Prompts\McpPromptRegistry.cs" />
+    <Compile Include="BongoWaifu\Mcp\SpeechBubble\ActiveCharacterInfo.cs" />
+    <Compile Include="BongoWaifu\Mcp\SpeechBubble\CharacterType.cs" />
+    <Compile Include="BongoWaifu\Mcp\SpeechBubble\SpeechBubbleController.cs" />
+    <Compile Include="BongoWaifu\Mcp\SpeechBubble\SpeechBubbleView.cs" />
+    <Compile Include="BongoWaifu\Mcp\StatsInfoDto.cs" />
+    <Compile Include="BongoWaifu\Mcp\Text\DisplayWidth.cs" />
+    <Compile Include="BongoWaifu\Mcp\Text\DurationCalculator.cs" />
+    <Compile Include="BongoWaifu\Mcp\Threading\UnityMainThreadDispatcher.cs" />
+    <Compile Include="BongoWaifu\Mcp\Tools\AskAndWaitTool.cs" />
+    <Compile Include="BongoWaifu\Mcp\Tools\GetGameStateTool.cs" />
+    <Compile Include="BongoWaifu\Mcp\Tools\SayTool.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\CharacterKind.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\ClothingSet.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\InteractionType.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MpFloatingText.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MpInteractionEffects.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MpJoinIndexAllocator.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MultiplayerFriendListWindow.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MultiplayerFriendRow.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MultiplayerLoc.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MultiplayerPanelController.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\MultiplayerSession.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\NetworkPlayer.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\RemoteAvatarFactory.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\RemoteAvatarPlacement.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\RemoteCatView.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\RemoteNameplate.cs" />
+    <Compile Include="BongoWaifu\Multiplayer\RemoteWaifuView.cs" />
+    <Compile Include="bp.cs" />
+    <Compile Include="bq.cs" />
+    <Compile Include="bx.cs" />
+    <Compile Include="by.cs" />
+    <Compile Include="bz.cs" />
+    <Compile Include="ca.cs" />
+    <Compile Include="CatCharacterDefinition.cs" />
+    <Compile Include="CatDisplayMode.cs" />
+    <Compile Include="CatUnlockType.cs" />
+    <Compile Include="ce.cs" />
+    <Compile Include="cg.cs" />
+    <Compile Include="ch.cs" />
+    <Compile Include="CharacterDragTarget.cs" />
+    <Compile Include="CharacterPackageData.cs" />
+    <Compile Include="ci.cs" />
+    <Compile Include="ClotheItem.cs" />
+    <Compile Include="ClotheItemController.cs" />
+    <Compile Include="CLOTHE_NAME.cs" />
+    <Compile Include="CLOTHE_TYPE.cs" />
+    <Compile Include="ClothingSetData.cs" />
+    <Compile Include="ClothingSetItemController.cs" />
+    <Compile Include="ClothingSetShowItem.cs" />
+    <Compile Include="ConfirmDialog.cs" />
+    <Compile Include="CREATOR_PAGE_UNLOCK.cs" />
+    <Compile Include="cs.cs" />
+    <Compile Include="cw.cs" />
+    <Compile Include="cx.cs" />
+    <Compile Include="cy.cs" />
+    <Compile Include="d.cs" />
+    <Compile Include="da.cs" />
+    <Compile Include="db.cs" />
+    <Compile Include="DirtinessMode.cs" />
+    <Compile Include="DlcInfo.cs" />
+    <Compile Include="DLC_TYPE.cs" />
+    <Compile Include="dn.cs" />
+    <Compile Include="do.cs" />
+    <Compile Include="dp.cs" />
+    <Compile Include="dq.cs" />
+    <Compile Include="DraggableWindow.cs" />
+    <Compile Include="DropNotificationMode.cs" />
+    <Compile Include="DropProgressIndicator.cs" />
+    <Compile Include="du.cs" />
+    <Compile Include="dx.cs" />
+    <Compile Include="dz.cs" />
+    <Compile Include="ea.cs" />
+    <Compile Include="eb.cs" />
+    <Compile Include="ec.cs" />
+    <Compile Include="ed.cs" />
+    <Compile Include="eg.cs" />
+    <Compile Include="el.cs" />
+    <Compile Include="eu.cs" />
+    <Compile Include="ev.cs" />
+    <Compile Include="ew.cs" />
+    <Compile Include="ex.cs" />
+    <Compile Include="fa.cs" />
+    <Compile Include="fb.cs" />
+    <Compile Include="fd.cs" />
+    <Compile Include="fe.cs" />
+    <Compile Include="fh.cs" />
+    <Compile Include="fi.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedComparers___Internal.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedReaders___Internal.cs" />
+    <Compile Include="FishNet\Serializing\Generated\GeneratedWriters___Internal.cs" />
+    <Compile Include="FixedResolutionViewport.cs" />
+    <Compile Include="fm.cs" />
+    <Compile Include="fn.cs" />
+    <Compile Include="fo.cs" />
+    <Compile Include="fp.cs" />
+    <Compile Include="fq.cs" />
+    <Compile Include="fu.cs" />
+    <Compile Include="fv.cs" />
+    <Compile Include="ga.cs" />
+    <Compile Include="GalleryItem.cs" />
+    <Compile Include="GalleryItemController.cs" />
+    <Compile Include="GalleryPanel.cs" />
+    <Compile Include="GameLinkCategory.cs" />
+    <Compile Include="GameLinkConfig.cs" />
+    <Compile Include="GameLinkEntry.cs" />
+    <Compile Include="gb.cs" />
+    <Compile Include="gc.cs" />
+    <Compile Include="gd.cs" />
+    <Compile Include="ge.cs" />
+    <Compile Include="gf.cs" />
+    <Compile Include="gg.cs" />
+    <Compile Include="gh.cs" />
+    <Compile Include="gi.cs" />
+    <Compile Include="GirlController.cs" />
+    <Compile Include="gj.cs" />
+    <Compile Include="gk.cs" />
+    <Compile Include="gl.cs" />
+    <Compile Include="GlobalKeyboardHook\GlobalInputPoller.cs" />
+    <Compile Include="GlobalKeyboardHook\WinGlobalHotkey.cs" />
+    <Compile Include="gm.cs" />
+    <Compile Include="gn.cs" />
+    <Compile Include="gp.cs" />
+    <Compile Include="gq.cs" />
+    <Compile Include="gr.cs" />
+    <Compile Include="gs.cs" />
+    <Compile Include="gt.cs" />
+    <Compile Include="gu.cs" />
+    <Compile Include="gv.cs" />
+    <Compile Include="ht.cs" />
+    <Compile Include="hu.cs" />
+    <Compile Include="hz.cs" />
+    <Compile Include="ib.cs" />
+    <Compile Include="ie.cs" />
+    <Compile Include="InfoPanel.cs" />
+    <Compile Include="ItemData.cs" />
+    <Compile Include="j.cs" />
+    <Compile Include="k.cs" />
+    <Compile Include="kc.cs" />
+    <Compile Include="kf.cs" />
+    <Compile Include="kg.cs" />
+    <Compile Include="kh.cs" />
+    <Compile Include="ki.cs" />
+    <Compile Include="Kirurobo\InputModuleProxy.cs" />
+    <Compile Include="kj.cs" />
+    <Compile Include="kk.cs" />
+    <Compile Include="km.cs" />
+    <Compile Include="kn.cs" />
+    <Compile Include="kp.cs" />
+    <Compile Include="kq.cs" />
+    <Compile Include="kt.cs" />
+    <Compile Include="ku.cs" />
+    <Compile Include="kv.cs" />
+    <Compile Include="kw.cs" />
+    <Compile Include="ky.cs" />
+    <Compile Include="kz.cs" />
+    <Compile Include="l.cs" />
+    <Compile Include="la.cs" />
+    <Compile Include="lb.cs" />
+    <Compile Include="lc.cs" />
+    <Compile Include="ld.cs" />
+    <Compile Include="le.cs" />
+    <Compile Include="lf.cs" />
+    <Compile Include="lg.cs" />
+    <Compile Include="lh.cs" />
+    <Compile Include="ll.cs" />
+    <Compile Include="lm.cs" />
+    <Compile Include="ln.cs" />
+    <Compile Include="lo.cs" />
+    <Compile Include="LockClickThroughGuard.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="lp.cs" />
+    <Compile Include="lq.cs" />
+    <Compile Include="lr.cs" />
+    <Compile Include="ls.cs" />
+    <Compile Include="m.cs" />
+    <Compile Include="MessageDialog.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="ModalDialogBase.cs" />
+    <Compile Include="ModalDialogManager.cs" />
+    <Compile Include="n.cs" />
+    <Compile Include="o.cs" />
+    <Compile Include="OpenURLButton.cs" />
+    <Compile Include="p.cs" />
+    <Compile Include="PlayerData.cs" />
+    <Compile Include="PlayerSaveData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="q.cs" />
+    <Compile Include="QuickMenu\QuickMenuController.cs" />
+    <Compile Include="r.cs" />
+    <Compile Include="RamenCat\Crafting\CraftRecipeConfig.cs" />
+    <Compile Include="RamenCat\Crafting\CraftTierEntry.cs" />
+    <Compile Include="RamenCat\SteamInventoryManager.cs" />
+    <Compile Include="RarityColorEntry.cs" />
+    <Compile Include="Rewired\Data\UserDataStore_File.cs" />
+    <Compile Include="Rewired\Data\UserDataStore_KeyValue.cs" />
+    <Compile Include="Rewired\Data\UserDataStore_PlayerPrefs.cs" />
+    <Compile Include="Rewired\Glyphs\ControllerElementGlyph.cs" />
+    <Compile Include="Rewired\Glyphs\ControllerElementGlyphBase.cs" />
+    <Compile Include="Rewired\Glyphs\ControllerElementGlyphSelectorOptions.cs" />
+    <Compile Include="Rewired\Glyphs\ControllerElementGlyphSelectorOptionsSO.cs" />
+    <Compile Include="Rewired\Glyphs\ControllerElementGlyphSelectorOptionsSOBase.cs" />
+    <Compile Include="Rewired\Glyphs\DefaultControllerElementGlyphSettingsBase.cs" />
+    <Compile Include="Rewired\Glyphs\GlyphOrTextBase.cs" />
+    <Compile Include="Rewired\Glyphs\GlyphProvider.cs" />
+    <Compile Include="Rewired\Glyphs\GlyphSet.cs" />
+    <Compile Include="Rewired\Glyphs\GlyphSetCollection.cs" />
+    <Compile Include="Rewired\Glyphs\SpriteGlyphSet.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIControllerElementGlyph.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIControllerElementGlyphBase.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIDefaultControllerElementGlyphSettings.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIDefaultGlyphOrTextTMProPrefabProvider.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIGlyphOrText.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIGlyphOrTextTMPro.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIPlayerControllerElementGlyph.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUIPlayerControllerElementGlyphBase.cs" />
+    <Compile Include="Rewired\Glyphs\UnityUI\UnityUITextMeshProGlyphHelper.cs" />
+    <Compile Include="Rewired\InputManager.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\PointerEventType.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredEventSystem.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredPointerInputModule.cs" />
+    <Compile Include="Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+    <Compile Include="Rewired\Localization\LocalizedStringProvider.cs" />
+    <Compile Include="Rewired\Localization\LocalizedStringProviderBase.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ButtonInfo.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CalibrationWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerExt.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CanvasScalerFitter.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ControlMapper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomButton.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomSlider.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\CustomToggle.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\InputBehaviorWindow.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\LanguageData.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\LanguageDataBase.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemedElement.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\ThemeSettings.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIControlSet.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIGroup.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\UIImageHelper.cs" />
+    <Compile Include="Rewired\UI\ControlMapper\Window.cs" />
+    <Compile Include="Ricimi\ButtonInfo.cs" />
+    <Compile Include="Ricimi\CircularProgressBar.cs" />
+    <Compile Include="Ricimi\CircularProgressBarText.cs" />
+    <Compile Include="Ricimi\SliderAmountText.cs" />
+    <Compile Include="Ricimi\Transition.cs" />
+    <Compile Include="SettingPanel.cs" />
+    <Compile Include="SKIN_NAME.cs" />
+    <Compile Include="SpineMaterialData.cs" />
+    <Compile Include="SpineSkinData.cs" />
+    <Compile Include="SpineSkinSetting.cs" />
+    <Compile Include="SpinnerRotate.cs" />
+    <Compile Include="StartupBackgroundBrush.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsExternalInit.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="t.cs" />
+    <Compile Include="ToggleTabVisuals.cs" />
+    <Compile Include="TypingConfirmDialog.cs" />
+    <Compile Include="u.cs" />
+    <Compile Include="Unity\VisualScripting\Generated\Aot\AotStubs.cs" />
+    <Compile Include="v.cs" />
+    <Compile Include="VoiceConfig.cs" />
+    <Compile Include="VoiceProfile.cs" />
+    <Compile Include="VolumeMuteButton.cs" />
+    <Compile Include="w.cs" />
+    <Compile Include="WindowDragHandler.cs" />
+    <Compile Include="WorkingDirectoryFix.cs" />
+    <Compile Include="WorkshopConfirmDialog.cs" />
+    <Compile Include="WorkshopCreateTab.cs" />
+    <Compile Include="WorkshopEditorManager.cs" />
+    <Compile Include="WorkshopManageItem.cs" />
+    <Compile Include="WorkshopManageTab.cs" />
+    <Compile Include="WorkshopPreviewController.cs" />
+    <Compile Include="WorkshopSizePreview.cs" />
+    <Compile Include="WorkshopUploadTab.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
